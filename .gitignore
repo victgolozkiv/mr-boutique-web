@@ -1,0 +1,14 @@
+# Vercel
+.vercel/
+
+# Archivos originales / backups
+assets-originales/
+
+# Archivos internos / personales
+audio/
+assets/*.html
+assets/*.zip
+
+# OS
+.DS_Store
+Thumbs.db

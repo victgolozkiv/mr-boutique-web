@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Joyería premium de Oro Laminado 18k y Zirconias. Envío a todo México desde Jiménez, Chihuahua.">
+    <title>Mr. Boutique | Joyería Elegante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background glowing orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-gem"></i>
+            Mr. Boutique
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#coleccion">Catálogo</a></li>
+            <li><a href="#calidad">Calidad</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="cart-icon-btn" id="cart-icon-btn" aria-label="Ver Carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </button>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-content reveal">
+            <h1>El Brillo de la <br><span class="text-gradient">Excelencia</span></h1>
+            <p>Descubre nuestra colección exclusiva de Oro Laminado 18k y Zirconias de alta calidad. Envíos garantizados
+                a todo México.</p>
+            <div class="hero-actions">
+                <a href="#coleccion" class="btn-primary">Ver Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Benefits / Quality -->
+    <section class="quality-section" id="calidad">
+        <div class="section-header reveal">
+            <h2>Nuestra Promesa</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="quality-grid">
+            <div class="quality-card glass-panel reveal quality-clickable" data-filter-target="oro">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-ring"></i>
+                </div>
+                <h3>Oro Laminado 18k</h3>
+                <p>Durabilidad y brillo excepcional con el acabado de alta calidad en 18 quilates, diseñado para durar e
+                    impresionar.</p>
+            </div>
+            <div class="quality-card glass-panel reveal delay-1 quality-clickable" data-filter-target="zirconia">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-gem"></i>
+                </div>
+                <h3>Zirconias Premium</h3>
+                <p>Piedras cuidadosamente seleccionadas con un corte perfecto que maximiza el reflejo de la luz,
+                    simulando diamante.</p>
+            </div>
+            <div class="quality-card glass-panel reveal delay-2">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Envíos a todo México</h3>
+                <p>Desde Jiménez, Chihuahua, aseguramos y empacamos tus piezas de lujo para llegar perfectas hasta tu
+                    hogar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Showcase -->
+    <section class="collection-section" id="coleccion">
+        <div class="section-header reveal">
+            <h2>Catálogo</h2>
+            <p class="subtitle">Piezas más solicitadas y de edición especial</p>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Filtros del Catálogo -->
+        <div class="catalog-filters reveal">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="oro">Oro Laminado 18k</button>
+            <button class="filter-btn" data-filter="zirconia">Zirconias Premium</button>
+        </div>
+
+        <div class="collection-grid">
+            <!-- Product 1 -->
+            <div class="product-card reveal" 
+                 data-category="zirconia"
+                 data-name="Zirconias" 
+                 data-price="$350 MXN" 
+                 data-promo="Promo: 3 x $600 MXN"
+                 data-options="Zirconias:350"
+                 data-images="assets/sirkonia1.jpeg,assets/sirkonia2.jpeg,assets/sirkonia3.jpeg,assets/sirkonas4.jpeg"
+                 data-desc="Hermosas Zirconias de corte premium y brillo excepcional. Su acabado en oro laminado de 18k garantiza una excelente durabilidad y un tono dorado fino. Ideales tanto para regalo como para tu colección personal de joyería elegante.">
+                <div class="product-image">
+                    <img src="assets/sirkonia1.jpeg" alt="Zirconias Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Zirconias</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$350 MXN</p>
+                    <div class="promo-tag">Promo: 3 x $600 MXN</div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card reveal delay-1" 
+                 data-category="oro"
+                 data-name="Pulsos" 
+                 data-price="$300 MXN" 
+                 data-promo="Promo: 3 x $700 MXN"
+                 data-options="Pulsos:300"
+                 data-images="assets/pulso1.jpeg,assets/pulso2.jpeg,assets/pulso3.jpeg,assets/pulso_video.mp4"
+                 data-desc="Elegantes pulsos de alta calidad elaborados con acabado premium. Destacan por su diseño moderno y resistente ideal para complementar outfits casuales y formales. Una joya excepcional con brillo duradero y gran distinción.">
+                <div class="product-image">
+                    <img src="assets/pulso1.jpeg" alt="Pulsos Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Pulsos</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$300 MXN</p>
+                    <div class="promo-tag">Promo: 3 x $700 MXN</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card reveal delay-2" 
+                 data-category="oro"
+                 data-name="Mónaco" 
+                 data-price="$500 MXN" 
+                 data-promo=""
+                 data-options="Mónaco:500"
+                 data-images="assets/monaco.jpeg,assets/monaco2.jpeg,assets/monaco3.jpeg"
+                 data-desc="Elegante pieza estilo Mónaco con acabados de primera calidad. Un diseño clásico y sofisticado en oro laminado de 18k, ideal tanto para uso diario como para lucir un brillo imponente en ocasiones especiales. Alta resistencia y durabilidad.">
+                <div class="product-image">
+                    <img src="assets/monaco.jpeg" alt="Mónaco Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Mónaco</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$500 MXN</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card reveal" 
+                 data-category="oro"
+                 data-name="Collares" 
+                 data-price="Desde $350 MXN" 
+                 data-promo=""
+                 data-options="Barbado chico:350,Barbado grande:500,Barbado diamantado:600,Torsal:700"
+                 data-images="assets/collar1.jpeg,assets/collar2.jpeg,assets/collar3.jpeg,assets/collar_video.mp4"
+                 data-desc="Collares de oro laminado 18k con acabados premium y diseño sofisticado. El costo varía según el grosor y tejido. Selecciona la opción deseada para ver el precio al instante.">
+                <div class="product-image">
+                    <img src="assets/collar1.jpeg" alt="Collares Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Collares</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">Desde $350 MXN</p>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card reveal delay-1" 
+                 data-category="oro"
+                 data-name="Barbado" 
+                 data-price="$600 MXN" 
+                 data-promo=""
+                 data-options="Barbado:600"
+                 data-images="assets/barbado2.jpeg"
+                 data-desc="Imponente diseño en tejido Barbado, un clásico de la joyería elegante y masculina. Elaborado con acabados perfectos en oro laminado de 18k, destaca por su gran presencia, alta resistencia and brillo continuo e insuperable.">
+                <div class="product-image">
+                    <img src="assets/barbado2.jpeg" alt="Barbado Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Barbado</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$600 MXN</p>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card reveal delay-2" 
+                 data-category="oro"
+                 data-name="Torsal" 
+                 data-price="$800 MXN" 
+                 data-promo=""
+                 data-options="Torsal:800"
+                 data-images="assets/torsal1.jpeg,assets/torsal2.jpeg"
+                 data-desc="Exclusivo diseño en tejido Torsal, característico por su trenzado tipo cuerda de alta gama. Confeccionado en oro laminado de 18k, ofrece una vista imponente y elegante, perfecta para quienes buscan destacar con estilo y distinción.">
+                <div class="product-image">
+                    <img src="assets/torsal1.jpeg" alt="Torsal Premium" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Torsal</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$800 MXN</p>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card reveal" 
+                 data-category="oro"
+                 data-name="Torzal + San Judas" 
+                 data-price="$650 MXN" 
+                 data-promo=""
+                 data-options="Torzal + San Judas:650"
+                 data-images="assets/dije.jpeg,assets/dije2.jpeg"
+                 data-desc="Elegante collar estilo Torzal acompañado del icónico dije de San Judas Tadeo, patrono de los imposibles. Pieza premium elaborada en oro laminado de 18k, ideal para quien quiera portar fe y estilo con una joya de calidad inigualable.">
+                <div class="product-image">
+                    <img src="assets/dije.jpeg" alt="Torzal + San Judas" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Torzal + San Judas</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">$650 MXN</p>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card reveal delay-1" 
+                 data-category="oro,zirconia"
+                 data-name="Dijes" 
+                 data-price="Desde $300 MXN" 
+                 data-promo=""
+                 data-options="Laminado:300,Incrustado:350"
+                 data-images="assets/dijeslaminados.jpeg"
+                 data-desc="Dijes de oro laminado 18k con acabados de alta calidad. Selecciona la variante (laminado o incrustado con zirconias) para ver el costo exacto y agrégalo directamente a tu pedido.">
+                <div class="product-image">
+                    <img src="assets/dijeslaminados.jpeg" alt="Dijes Laminados" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="btn-detail btn-icon"><i class="fa-solid fa-eye"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Dijes</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="price">Desde $300 MXN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Así se entregan las piezas -->
+    <section class="delivery-section reveal">
+        <div class="section-header">
+            <h2>Así se entregan las piezas</h2>
+            <p class="subtitle">Empaque cuidadoso y presentación premium en cada pedido</p>
+            <div class="divider"></div>
+        </div>
+        <div class="delivery-img-container">
+            <img src="assets/asiseentreganlaspiezas.jpeg" alt="Así se entregan las piezas Mr. Boutique" loading="lazy">
+        </div>
+    </section>
+
+
+    <!-- Testimonials / Reviews -->
+    <section class="reviews-section" id="reseñas">
+        <div class="section-header reveal">
+            <h2>Clientes Satisfechos</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card glass-panel reveal">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Compré una esclava para un regalo y llegó súper rápido a Monterrey. ¡El brillo de las zirconias es impresionante! 100% recomendados."</p>
+                <div class="review-author">- Carlos M.</div>
+            </div>
+            <div class="review-card glass-panel reveal delay-1">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Dudaba un poco al comprar por internet, pero me llegó mi paquete excelentemente empaquetado y la calidad del oro de 18k se siente finísima."</p>
+                <div class="review-author">- Ana Paula S.</div>
+            </div>
+            <div class="review-card glass-panel reveal delay-2">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Precios súper justos. Tienen mejor calidad que muchas joyerías de plaza. Ya es mi segunda compra y seguramente vuelvo."</p>
+                <div class="review-author">- Fernando H.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-header reveal">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="faq-container reveal">
+            <div class="faq-item">
+                <button class="faq-question">¿Cuánto tarda el envío estándar? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Enviamos desde Jiménez, Chihuahua y usamos paqueterías seguras. Usualmente tu pedido llega entre 3 a 5 días hábiles a cualquier parte de la República Mexicana.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Qué métodos de pago aceptan? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Aceptamos transferencias bancarias directas y depósitos en Oxxo. Todo te lo confirmamos vía WhatsApp de forma personal.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Me puedo bañar con el oro laminado? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Nuestro oro laminado de 18k es de primer nivel y muy resistente. Sin embargo, para maximizar su brillo original (especialmente de las zirconias), sugerimos evitar piscinas o químicos corrosivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location banner -->
+    <section class="location-banner reveal" id="contacto">
+        <div class="banner-content glass-panel">
+            <i class="fa-solid fa-location-dot location-icon"></i>
+            <h2>Hecho con pasión en Jiménez, Chihuahua</h2>
+            <p>Conecta con nosotros para pedidos personalizados, dudas o precios de mayoreo.</p>
+            <div class="contact-links">
+                <a href="#" class="btn-whatsapp pulse"><i class="fa-brands fa-whatsapp"></i> Envíanos un WhatsApp</a>
+                <a href="https://www.instagram.com/mrboutique_delux/" target="_blank" rel="noopener noreferrer"
+                    class="btn-instagram"><i class="fa-brands fa-instagram"></i> @mrboutique_delux</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content reveal">
+            <div class="footer-brand">
+                <i class="fa-solid fa-gem"></i>
+                Mr. Boutique
+            </div>
+            <p>&copy; 2026 Mr. Boutique Joyería. Todos los derechos reservados.</p>
+            <p class="location-text">Calidad Inigualable &bull; Jiménez, Chih.</p>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="main-img-container" id="modal-media-container">
+                        <img id="modal-main-img" src="" alt="Producto">
+                    </div>
+                    <div id="modal-thumbnails" class="thumbnails-container">
+                        <!-- Thumbnails dynamically added -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-title">Nombre del Producto</h2>
+                    <div id="modal-stars" class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-container">
+                        <span id="modal-price" class="price">Precio</span>
+                        <div id="modal-promo" class="promo-tag">Promo</div>
+                    </div>
+                    <!-- Option Selection Container -->
+                    <div id="modal-options-wrapper" class="modal-options-wrapper" style="display: none;">
+                        <label>Selecciona el tipo o medida:</label>
+                        <div id="modal-option-chips" class="modal-option-chips"></div>
+                    </div>
+
+                    <p id="modal-description" class="description">Descripción del producto...</p>
+                    
+                    <div class="modal-actions">
+                        <button id="modal-add-to-cart-btn" class="btn-secondary modal-cart-btn">
+                            <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
+                        </button>
+                        <button id="modal-buy-btn" class="btn-primary modal-buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Comprar ya
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fa-solid fa-cart-shopping" style="color: var(--color-gold);"></i> Mi Carrito</h3>
+            <span class="cart-close-btn" id="cart-close-btn">&times;</span>
+        </div>
+        <div class="cart-drawer-body" id="cart-items-container">
+            <div class="cart-empty-message">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Tu carrito está vacío</p>
+                <button class="btn-primary" id="btn-close-cart-go">Explorar Catálogo</button>
+            </div>
+        </div>
+        <div class="cart-drawer-footer">
+            <!-- Coupon input -->
+            <div class="coupon-container">
+                <input type="text" id="coupon-code" placeholder="Código de descuento (Instagram)" autocomplete="off">
+                <button id="apply-coupon-btn" class="btn-secondary">Aplicar</button>
+            </div>
+            <div id="coupon-message" class="coupon-message"></div>
+
+            <div class="cart-summary">
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0 MXN</span>
+                </div>
+                <div class="summary-line discount-line" id="discount-line" style="display: none;">
+                    <span>Descuento (<span id="discount-percent">0%</span>):</span>
+                    <span id="cart-discount">-$0 MXN</span>
+                </div>
+                <div class="summary-line total-line">
+                    <span>Total:</span>
+                    <span id="cart-total">$0 MXN</span>
+                </div>
+            </div>
+            <button id="checkout-btn" class="btn-primary checkout-btn">
+                <i class="fa-brands fa-whatsapp"></i> Confirmar Pedido por WhatsApp
+            </button>
+        </div>
+    </div>
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
