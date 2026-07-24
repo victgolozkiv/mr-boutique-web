@@ -36,4 +36,11 @@ Abre `index.html` en cualquier navegador. No requiere servidor ni instalación.
 
 ---
 
-*Hecho con ❤️ para el negocio de mi primo.*
+*Hecho con ❤️ para el negocio de mi primo.*## ❤️ Apoya el Desarrollo
+
+Si este reproductor te gusta o te ha sido útil, ¡considera invitarme un café!.
+
+[![Donate PayPal](https://img.shields.io/badge/Donar_vía-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/VictorRicardo162/1)
+
+---
+
