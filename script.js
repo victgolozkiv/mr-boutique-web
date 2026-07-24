@@ -1,6 +1,6 @@
 // Configuración de WhatsApp
 // Formato: 521 + número a 10 dígitos
-const NUMERO_WHATSAPP = "526141165102"; // Número de Chuy
+const NUMERO_WHATSAPP = "000"; // Número de Chuy
 
 // Base de Datos de Cupones de Descuento
 const CUPONES = {
